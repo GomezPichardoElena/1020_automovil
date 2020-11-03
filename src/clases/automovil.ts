@@ -1,8 +1,6 @@
 export class Automovil {
     static push: any
-    static forEach(a: (Automovil: { Identificador: any }) => void) {
-        throw new Error('error')
-    }
+  
     private identificador : any
     private consumo : number
     private gasolina: number 

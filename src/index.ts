@@ -7,7 +7,7 @@ import { leerTeclado } from './views/entradaTeclado'
 
 const main = async() => {
     //creamos un array para almacenar los coches que se vayan creando y le pasamos la clase de automovil
-    let coches: Array<Automovil> = new Array()
+    let coches: Array<any> = new Array<Automovil>()
     let n: number 
     do {
         n = await menu()
@@ -23,8 +23,8 @@ const main = async() => {
                     gasolina = parseFloat(await leerTeclado('Introduzca la cantidad de gasolina que tienee l coche'))
                     let coche=new Automovil(identificador, consumo, gasolina)
                     let existe = false
-                    coches.forEach(Coche => {
-                        if (coche.Identificador==Coche.Identificador){
+                    coches.forEach(coche => {
+                        if (coche.Identificador==coche.Identificador){
                             existe=true
                         }
                     })
