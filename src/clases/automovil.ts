@@ -39,7 +39,7 @@ export class Automovil {
         this.gasolina=c
     }
     cArrancado(){
-        if(this.Encendido==false){
+        if(this.encendido==false){
             this.encendido=true
         }else{
             if (this.velocidad!=0){
